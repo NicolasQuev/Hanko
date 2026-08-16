@@ -31,12 +31,6 @@ Tu tracker personal de anime con forma de catálogo de círculos impreso para un
   </tr>
 </table>
 
-<div align="center">
-
-<img src="screenshots/gallery/home-mobile.png" alt="La sala principal en móvil" width="300">
-
-</div>
-
 ## Cómo funciona
 
 1. **Busca y reclama** — En la sala de alta buscas tu serie y la añades. Se estampa como un sello en tu catálogo.
