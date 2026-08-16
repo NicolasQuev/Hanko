@@ -36,6 +36,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local tooling artifacts
+.impeccable/
+scripts/.impeccable/
+.tmp-*
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

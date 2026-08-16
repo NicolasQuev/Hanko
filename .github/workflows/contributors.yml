@@ -1,0 +1,27 @@
+name: contributors
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch contributors
+        run: node scripts/update-contributors.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: actualizar contribuidores"
+          file_pattern: public/contributors.json

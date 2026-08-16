@@ -1,5 +1,5 @@
 {
-  "name": "animepuntos-app",
+  "name": "hanko",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,20 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@gsap/react": "2.1.2",
+    "gsap": "3.15.0",
+    "lucide-react": "1.31.0",
     "next": "16.3.0",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
+    "@types/node": "20.19.43",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.4",
+    "eslint": "9.39.5",
     "eslint-config-next": "16.3.0",
-    "typescript": "^5"
+    "puppeteer-core": "25.6.0",
+    "typescript": "5.9.3"
   }
 }

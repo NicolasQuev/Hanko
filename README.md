@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hanko
+
+Personal anime tracker styled as a printed doujinshi circle catalog. Search anime, stamp series into your catalog, mark episodes watched, rate, and earn points — all stored locally, no accounts, no backend.
+
+## About
+
+Hanko is a personal anime tracker built with Next.js and React. Search any anime through the Jikan API, stamp it into your catalog, mark episodes as watched, rate your series, and earn points for every episode you finish — then watch it all come together in a dashboard of stats and progress. No accounts, no backend: your library lives entirely in your browser via localStorage.
+
+The interface is designed as a printed doujinshi circle catalog for a comiket-style fair: warm newsprint paper, a single near-black ink, and one vermillion plate reserved for official marks. Each series is a physical *hanko* (seal) stamped on the sheet, with a stand code and a hand-drawn status mark — watching, completed, planned, or paused. Flat surfaces, guillotine borders, monospace tabular data. It feels like a fanzine, not a web app.
+
+## Stack
+
+- Next.js (App Router) · React 19 · TypeScript
+- GSAP
+- lucide-react
+- Jikan API / AniList GraphQL (search and details, no API key needed)
+- localStorage (no backend)
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` — development server
+- `npm run build` — production build
+- `npm run start` — start the production server
+- `npm run lint` — ESLint
+- `node scripts/generate-titles.mjs` — regenerate `public/anime-titles.json` (offline search index) from AniList
+- `node scripts/shot.mjs` — capture UI screenshots with Edge (Puppeteer)
 
-## Learn More
+## Data & Privacy
 
-To learn more about Next.js, take a look at the following resources:
+Everything is stored in your browser via localStorage. No accounts, no sync, no telemetry.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The full design system (colors, typography, layout, components) lives in [DESIGN.md](DESIGN.md).
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[MIT](LICENSE).
