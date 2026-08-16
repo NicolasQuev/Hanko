@@ -22,18 +22,18 @@ Tu tracker personal de anime con forma de catálogo de círculos impreso para un
 
 <table>
   <tr>
-    <td><img src="screenshots/gallery/home-top.jpg" alt="La sala principal, con la portada del catálogo" width="100%"></td>
-    <td><img src="screenshots/gallery/biblioteca.jpg" alt="El catálogo con tus series estampadas" width="100%"></td>
+    <td><img src="screenshots/gallery/home-top.png" alt="La sala principal, con la portada del catálogo" width="100%"></td>
+    <td><img src="screenshots/gallery/biblioteca.png" alt="El catálogo con tus series estampadas" width="100%"></td>
   </tr>
   <tr>
-    <td><img src="screenshots/gallery/ficha.jpg" alt="La ficha de una serie, con puntuación y progreso" width="100%"></td>
-    <td><img src="screenshots/gallery/alta.jpg" alt="La sala de alta para añadir series nuevas" width="100%"></td>
+    <td><img src="screenshots/gallery/ficha.png" alt="La ficha de una serie, con puntuación y progreso" width="100%"></td>
+    <td><img src="screenshots/gallery/alta.png" alt="La sala de alta para añadir series nuevas" width="100%"></td>
   </tr>
 </table>
 
 <div align="center">
 
-<img src="screenshots/gallery/home-mobile.jpg" alt="La sala principal en móvil" width="300">
+<img src="screenshots/gallery/home-mobile.png" alt="La sala principal en móvil" width="300">
 
 </div>
 
