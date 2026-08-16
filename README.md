@@ -4,9 +4,38 @@
 
 <span style="display:block;margin-top:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:#8b949e">— catálogo de círculos</span>
 
+<a href="https://nicolasquev.github.io/Hanko/" style="display:inline-block;margin-top:16px;padding:10px 24px;background:#c33f1b;color:#fff;border-radius:999px;font-weight:700;text-decoration:none">Abrir la web viva</a>
+
 </div>
 
 Tu tracker personal de anime con forma de catálogo de círculos impreso para una feria tipo comiket. Busca series, estampa tu catálogo, entinta capítulos vistos, puntúa y suma puntos — todo guardado en tu dispositivo. Sin cuentas, sin servidores.
+
+<div align="center">
+
+![Paseo por la sala](screenshots/demo.gif)
+
+<sub style="color:#8b949e">La biblioteca se estampa en tu mapa: busca, entinta, puntúa y llena los sectores del catálogo.</sub>
+
+</div>
+
+## Galería
+
+<table>
+  <tr>
+    <td><img src="screenshots/gallery/home-top.jpg" alt="La sala principal, con la portada del catálogo" width="100%"></td>
+    <td><img src="screenshots/gallery/biblioteca.jpg" alt="El catálogo con tus series estampadas" width="100%"></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/gallery/ficha.jpg" alt="La ficha de una serie, con puntuación y progreso" width="100%"></td>
+    <td><img src="screenshots/gallery/alta.jpg" alt="La sala de alta para añadir series nuevas" width="100%"></td>
+  </tr>
+</table>
+
+<div align="center">
+
+<img src="screenshots/gallery/home-mobile.jpg" alt="La sala principal en móvil" width="300">
+
+</div>
 
 ## Cómo funciona
 
@@ -36,17 +65,6 @@ npm run dev
 ```
 
 Abre [http://localhost:3000](http://localhost:3000).
-
-## Scripts
-
-| Comando | Qué hace |
-| --- | --- |
-| `npm run dev` | Servidor de desarrollo |
-| `npm run build` | Build de producción (export estático) |
-| `npm run start` | Sirve el build de producción |
-| `npm run lint` | ESLint |
-| `node scripts/generate-titles.mjs` | Regenera `public/anime-titles.json` (índice de búsqueda offline) desde AniList |
-| `node scripts/shot.mjs` | Captura screenshots de la UI con Edge (Puppeteer) |
 
 ## Datos y privacidad
 
