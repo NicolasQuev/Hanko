@@ -5,6 +5,7 @@ import Masthead from "@/components/Masthead";
 import Footer from "@/components/Footer";
 import LibraryProvider from "@/components/Provider";
 import { I18nProvider } from "@/components/I18nProvider";
+import Guide from "@/components/Guide";
 
 export const metadata: Metadata = {
   title: "Hanko",
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <Masthead />
           <LibraryProvider>{children}</LibraryProvider>
           <Footer />
+          <Guide />
         </I18nProvider>
       </body>
     </html>

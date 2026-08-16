@@ -246,6 +246,31 @@ const es = {
   confirm: {
     cancel: "Cancelar",
   },
+  guide: {
+    tag: "Guía de uso",
+    title: "Cómo funciona",
+    intro: "Cinco pasos para llenar tu catálogo.",
+    step1Title: "Busca y reclama",
+    step1Text:
+      "En la sala de alta busca tu serie y pulsa Añadir. Se estampa como un sello en tu catálogo.",
+    step2Title: "Entinta capítulos",
+    step2Text:
+      "Cada episodio visto suma un punto. El sello activo del mapa los marca de uno en uno.",
+    step3Title: "Rellena la ficha",
+    step3Text:
+      "Sinopsis, puntuación del 1 al 10 y dónde verla. Puntuar también suma puntos.",
+    step4Title: "Ordena el catálogo",
+    step4Text:
+      "Los estados —en curso, completo, plan, en espera— llenan los sectores del mapa.",
+    step5Title: "Guarda tu progreso",
+    step5Text:
+      "La grabadora guarda todo en un archivo (disco). Arrástralo de vuelta para recuperarlo.",
+    privacy: "Sin cuentas ni servidores. Tus datos viven en este dispositivo.",
+    start: "Empezar",
+    skip: "Saltar la guía",
+    close: "Cerrar la guía",
+    trigger: "Guía de uso",
+  },
   notFound: {
     title: "Página fuera del catálogo.",
     text: "Esta ruta no existe en el mapa de sala. Vuelve al catálogo para seguir entintando.",
@@ -462,6 +487,31 @@ const en: Dict = {
   confirm: {
     cancel: "Cancel",
   },
+  guide: {
+    tag: "Guide",
+    title: "How it works",
+    intro: "Five steps to fill your catalog.",
+    step1Title: "Search and claim",
+    step1Text:
+      "In the add hall, search your series and press Add. It's stamped into your catalog.",
+    step2Title: "Ink episodes",
+    step2Text:
+      "Every episode you watch adds a point. The active stamp on the map marks them one by one.",
+    step3Title: "Fill the sheet",
+    step3Text:
+      "Synopsis, rating from 1 to 10 and where to watch it. Rating also earns points.",
+    step4Title: "Sort the catalog",
+    step4Text:
+      "Statuses —watching, completed, planned, on hold— fill the map sectors.",
+    step5Title: "Save your progress",
+    step5Text:
+      "The recorder saves everything to a file (disc). Drag it back to restore.",
+    privacy: "No accounts, no servers. Your data lives on this device.",
+    start: "Start",
+    skip: "Skip the guide",
+    close: "Close the guide",
+    trigger: "How it works",
+  },
   notFound: {
     title: "Page outside the catalog.",
     text: "This route doesn't exist on the hall map. Go back to the catalog to keep inking.",
@@ -665,6 +715,26 @@ const ja: Dict = {
   },
   confirm: {
     cancel: "キャンセル",
+  },
+  guide: {
+    tag: "使い方",
+    title: "はじめに",
+    intro: "カタログを埋める5つのステップ。",
+    step1Title: "探して申請",
+    step1Text: "登録室で作品を探して「追加」を押します。カタログに印として押されます。",
+    step2Title: "話をスタンプ",
+    step2Text: "見た話ごとにポイントが加算されます。会場図の進行中の印で1話ずつマークできます。",
+    step3Title: "詳細を記入",
+    step3Text: "あらすじ、1〜10の評価、視聴先。評価でもポイントがもらえます。",
+    step4Title: "カタログを整理",
+    step4Text: "状態（視聴中・完走・予定・一時停止）で会場の区画が埋まります。",
+    step5Title: "進捗を保存",
+    step5Text: "レコーダーで全部をファイル（ディスク）に保存。ドラッグして戻せば復元できます。",
+    privacy: "アカウントもサーバーも不要。データはこの端末にだけ保存されます。",
+    start: "始める",
+    skip: "ガイドをスキップ",
+    close: "ガイドを閉じる",
+    trigger: "使い方",
   },
   notFound: {
     title: "カタログ外のページです。",
