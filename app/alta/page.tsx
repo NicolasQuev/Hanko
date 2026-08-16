@@ -79,12 +79,22 @@ export default function Alta() {
     setSuggestLoading(true);
     debounceRef.current = setTimeout(async () => {
       try {
-        let res = await localSuggestions(q);
-        if (res.length === 0) res = await searchSuggestions(q);
+        const [local, live] = await Promise.all([
+          localSuggestions(q),
+          searchSuggestions(q).catch(() => [] as JikanResult[]),
+        ]);
         if (seq !== seqRef.current) return;
-        setSuggestions(res);
+        const seen = new Set<number>();
+        const merged: JikanResult[] = [];
+        for (const r of [...live, ...local]) {
+          if (seen.has(r.malId)) continue;
+          seen.add(r.malId);
+          merged.push(r);
+          if (merged.length >= 12) break;
+        }
+        setSuggestions(merged);
         setSuggestOpen(true);
-        setActiveIndex(res.length > 0 ? 0 : -1);
+        setActiveIndex(merged.length > 0 ? 0 : -1);
       } catch {
         if (seq !== seqRef.current) return;
         setSuggestions([]);
