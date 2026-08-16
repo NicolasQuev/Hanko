@@ -113,7 +113,7 @@ export default function Home() {
                       {t("home.sealComplete")}
                     </span>
                   )}
-                  <Link href={`/serie/${active.id}`} className="btn btn--ghost">
+                  <Link href={`/serie?id=${active.id}`} className="btn btn--ghost">
                     {t("home.ficha")}
                   </Link>
                 </div>

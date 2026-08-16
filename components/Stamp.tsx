@@ -31,7 +31,7 @@ export default function Stamp({
 
   return (
     <Link
-      href={`/serie/${series.id}`}
+      href={`/serie?id=${series.id}`}
       className={`stamp${size === "lg" ? " stamp--lg" : ""}${size === "xs" ? " stamp--xs" : ""}`}
       title={size === "xs" ? series.title : undefined}
     >

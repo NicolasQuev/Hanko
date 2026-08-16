@@ -1,4 +1,5 @@
 import type { JikanResult } from "./types";
+import { assetUrl } from "./assets";
 
 interface JikanAnime {
   mal_id: number;
@@ -199,7 +200,7 @@ let titlesPromise: Promise<TitleEntry[]> | null = null;
 function loadTitles(): Promise<TitleEntry[]> {
   if (titlesCache) return Promise.resolve(titlesCache);
   if (!titlesPromise) {
-    titlesPromise = fetch("/anime-titles.json")
+    titlesPromise = fetch(assetUrl("/anime-titles.json"))
       .then((r) => {
         if (!r.ok) throw new Error(`titles ${r.status}`);
         return r.json() as Promise<TitleEntry[]>;

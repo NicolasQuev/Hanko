@@ -379,7 +379,7 @@ export default function Alta() {
         status="added"
         caption={stamping ? stamping.result.title : ""}
         onDone={() => {
-          if (stamping) router.push(`/serie/${stamping.id}`);
+          if (stamping) router.push(`/serie?id=${stamping.id}`);
         }}
       />
     </div>

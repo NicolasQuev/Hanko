@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useI18n } from "@/components/I18nProvider";
+import { assetUrl } from "@/lib/assets";
 
 interface Contributor {
   login: string;
@@ -18,7 +19,7 @@ let promise: Promise<Contributor[]> | null = null;
 function loadContributors(): Promise<Contributor[]> {
   if (cache) return Promise.resolve(cache);
   if (!promise) {
-    promise = fetch("/contributors.json")
+    promise = fetch(assetUrl("/contributors.json"))
       .then((r) => {
         if (!r.ok) throw new Error(`contributors ${r.status}`);
         return r.json() as Promise<Contributor[]>;

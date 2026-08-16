@@ -14,7 +14,7 @@ const PROFILE = path.join(__dirname, ".impeccable", "edge-profile-pw");
 const ROUTES = [
   { file: "dashboard", url: "/" },
   { file: "biblioteca", url: "/biblioteca" },
-  { file: "ficha", url: "/serie/mal-52991" },
+  { file: "ficha", url: "/serie?id=mal-52991" },
   { file: "alta", url: "/alta" },
 ];
 

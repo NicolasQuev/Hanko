@@ -1,11 +1,11 @@
 "use client";
 
-import { use, useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowLeft, House, Minus } from "lucide-react";
 import { useLibrary } from "@/lib/store";
 import { Mark } from "@/components/Mark";
@@ -37,12 +37,9 @@ const STATUS_ICONS: Record<SeriesStatus, React.ReactNode> = {
 
 const STRIP_MAX = 60;
 
-export default function Serie({
-  params,
-}: {
-  params: Promise<{ id: string }>;
-}) {
-  const { id } = use(params);
+function SerieView() {
+  const searchParams = useSearchParams();
+  const id = searchParams.get("id") ?? "";
   const router = useRouter();
   const { t } = useI18n();
   const { library, setStatus, setWatched, markNext, unmark, setRating, remove } =
@@ -334,5 +331,13 @@ export default function Serie({
         onDone={() => setStampActive(false)}
       />
     </div>
+  );
+}
+
+export default function Serie() {
+  return (
+    <Suspense fallback={null}>
+      <SerieView />
+    </Suspense>
   );
 }
