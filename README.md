@@ -1,47 +1,61 @@
-# Hanko
+<div align="center">
 
-Personal anime tracker styled as a printed doujinshi circle catalog. Search anime, stamp series into your catalog, mark episodes watched, rate, and earn points — all stored locally, no accounts, no backend.
+<span style="display:inline-block;width:18px;height:18px;background:#c33f1b;border-radius:1px;vertical-align:middle;margin-right:10px"></span><span style="font-size:2rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;vertical-align:middle;line-height:1">Hanko</span>
 
-## About
+<span style="display:block;margin-top:6px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:#8b949e">— catálogo de círculos</span>
 
-Hanko is a personal anime tracker built with Next.js and React. Search any anime through the Jikan API, stamp it into your catalog, mark episodes as watched, rate your series, and earn points for every episode you finish — then watch it all come together in a dashboard of stats and progress. No accounts, no backend: your library lives entirely in your browser via localStorage.
+</div>
 
-The interface is designed as a printed doujinshi circle catalog for a comiket-style fair: warm newsprint paper, a single near-black ink, and one vermillion plate reserved for official marks. Each series is a physical *hanko* (seal) stamped on the sheet, with a stand code and a hand-drawn status mark — watching, completed, planned, or paused. Flat surfaces, guillotine borders, monospace tabular data. It feels like a fanzine, not a web app.
+Tu tracker personal de anime con forma de catálogo de círculos impreso para una feria tipo comiket. Busca series, estampa tu catálogo, entinta capítulos vistos, puntúa y suma puntos — todo guardado en tu dispositivo. Sin cuentas, sin servidores.
+
+## Cómo funciona
+
+1. **Busca y reclama** — En la sala de alta buscas tu serie y la añades. Se estampa como un sello en tu catálogo.
+2. **Entinta capítulos** — Cada episodio visto suma un punto. El sello activo del mapa los marca de uno en uno.
+3. **Rellena la ficha** — Sinopsis, puntuación del 1 al 10 y dónde verla. Puntuar también suma puntos.
+4. **Ordena el catálogo** — Los estados (en curso, completo, plan, en espera) llenan los sectores del mapa.
+5. **Guarda tu progreso** — La grabadora guarda todo en un archivo (disco). Arrástralo de vuelta para recuperarlo.
+
+La primera vez que entras, una guía te muestra este ciclo en tu idioma (ES · EN · JP).
 
 ## Stack
 
-- Next.js (App Router) · React 19 · TypeScript
-- GSAP
-- lucide-react
-- Jikan API / AniList GraphQL (search and details, no API key needed)
-- localStorage (no backend)
+| Capa | Herramienta |
+| --- | --- |
+| Framework | Next.js (App Router) · React 19 · TypeScript |
+| Animación | GSAP |
+| Iconos | lucide-react |
+| Datos | Jikan API / AniList GraphQL (sin API key) |
+| Almacenamiento | localStorage (sin backend) |
 
-## Getting Started
+## Empezar
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser.
+Abre [http://localhost:3000](http://localhost:3000).
 
 ## Scripts
 
-- `npm run dev` — development server
-- `npm run build` — production build
-- `npm run start` — start the production server
-- `npm run lint` — ESLint
-- `node scripts/generate-titles.mjs` — regenerate `public/anime-titles.json` (offline search index) from AniList
-- `node scripts/shot.mjs` — capture UI screenshots with Edge (Puppeteer)
+| Comando | Qué hace |
+| --- | --- |
+| `npm run dev` | Servidor de desarrollo |
+| `npm run build` | Build de producción (export estático) |
+| `npm run start` | Sirve el build de producción |
+| `npm run lint` | ESLint |
+| `node scripts/generate-titles.mjs` | Regenera `public/anime-titles.json` (índice de búsqueda offline) desde AniList |
+| `node scripts/shot.mjs` | Captura screenshots de la UI con Edge (Puppeteer) |
 
-## Data & Privacy
+## Datos y privacidad
 
-Everything is stored in your browser via localStorage. No accounts, no sync, no telemetry.
+Todo se guarda en tu navegador mediante `localStorage`. Sin cuentas, sin sincronización, sin telemetría. Tus datos viven en este dispositivo.
 
-## Design
+## Diseño
 
-The full design system (colors, typography, layout, components) lives in [DESIGN.md](DESIGN.md).
+El sistema de diseño completo (colores, tipografía, layout, componentes) está en [DESIGN.md](DESIGN.md).
 
-## License
+## Licencia
 
 [MIT](LICENSE).

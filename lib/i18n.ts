@@ -249,6 +249,7 @@ const es = {
   guide: {
     tag: "Guía de uso",
     title: "Cómo funciona",
+    chooseLang: "Elige tu idioma",
     intro: "Cinco pasos para llenar tu catálogo.",
     step1Title: "Busca y reclama",
     step1Text:
@@ -490,6 +491,7 @@ const en: Dict = {
   guide: {
     tag: "Guide",
     title: "How it works",
+    chooseLang: "Choose your language",
     intro: "Five steps to fill your catalog.",
     step1Title: "Search and claim",
     step1Text:
@@ -719,6 +721,7 @@ const ja: Dict = {
   guide: {
     tag: "使い方",
     title: "はじめに",
+    chooseLang: "言語を選択",
     intro: "カタログを埋める5つのステップ。",
     step1Title: "探して申請",
     step1Text: "登録室で作品を探して「追加」を押します。カタログに印として押されます。",
