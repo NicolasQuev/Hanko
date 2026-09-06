@@ -26,6 +26,7 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - name: Refresh contributors
+        if: github.repository == 'NicolasQuev/Hanko'
         run: node scripts/update-contributors.mjs
         env:
           GITHUB_TOKEN: ${{ github.token }}
