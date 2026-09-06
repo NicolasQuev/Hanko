@@ -1,8 +1,6 @@
 name: contributors
 
 on:
-  push:
-    branches: [main]
   schedule:
     - cron: "0 6 * * 1"
   workflow_dispatch:

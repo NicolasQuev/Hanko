@@ -25,6 +25,11 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run lint
+      - name: Refresh contributors
+        run: node scripts/update-contributors.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        continue-on-error: true
       - run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /Hanko
